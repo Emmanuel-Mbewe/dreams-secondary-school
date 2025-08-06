@@ -2,17 +2,17 @@ import Link from 'next/link';
 
 const Home = () => {
   // Images for the highlights — replace with your school images!
-  const academicsImage = '/images/school/academics.jpg';
-  const admissionsImage = '/images/school/admissions.jpg';
-  const departmentsImage = '/images/school/departments.jpg';
-  const newsImage = '/images/school/news.jpg';
+  const academicsImage = '/images/academics.jpg';
+  const admissionsImage = '/images/admissions.jpg';
+  const departmentsImage = '/images/departments.jpg';
+  const newsImage = '/images/news.jpg';
 
   return (
     <div>
       {/* Hero Section with Background Image */}
       <section
         className="relative h-screen bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/Dreams_Secondary_School.jpg')" }}
+        style={{ backgroundImage: "url('/images/Dreams_Secondary_School_Background_Image.png')" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black opacity-60"></div>

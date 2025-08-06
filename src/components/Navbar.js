@@ -50,6 +50,7 @@ const Navbar = () => {
             <a href="/about" className="text-black hover:text-gray-700">About Us</a>
             <a href="/academics" className="text-black hover:text-gray-700">Academics</a>
             <a href="/admissions" className="text-black hover:text-gray-700">Admissions</a>
+            <a href="/students" className="text-black hover:text-gray-700">Students</a>
             
             <div
               className="relative"
@@ -124,6 +125,7 @@ const Navbar = () => {
             <a href="/about" className="block hover:text-black">About Us</a>
             <a href="/academics" className="block hover:text-black">Academics</a>
             <a href="/admissions" className="block hover:text-black">Admissions</a>
+            <a href="/students" className="block hover:text-black">Students</a>
             <a href="/departments" className="block hover:text-black">Departments</a>
             <a href="/news" className="block hover:text-black">News</a>
             <a href="/contact" className="block hover:text-black">Contact Us</a>
