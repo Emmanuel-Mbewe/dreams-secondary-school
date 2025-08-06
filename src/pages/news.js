@@ -50,7 +50,7 @@ const News = () => {
                 }).format(new Date(article.date))}
               </p>
               <p className="text-gray-700 mb-4">{article.description}</p>
-              <a href={article.link} className="text-blue-600 hover:underline">
+              <a href={article.link} className="text-orange-600 hover:underline">
                 Read More
               </a>
             </article>

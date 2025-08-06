@@ -39,7 +39,7 @@ const Navbar = () => {
                 className="rounded-full"
               />
             </a>
-            <a href="/" className="text-black font-bold text-xl">
+            <a href="/" className="text-orange-700 font-bold text-xl">
               Dreams Secondary School
             </a>
           </div>
@@ -120,7 +120,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="bg-blue-700 text-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="bg-orange-700 text-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="/" className="block hover:text-black">Home</a>
             <a href="/about" className="block hover:text-black">About Us</a>
             <a href="/academics" className="block hover:text-black">Academics</a>

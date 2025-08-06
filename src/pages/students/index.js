@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import students from "../../data/students.json"; // adjust path if needed
+import jsPDF from "jspdf";
+import autoTable from "jspdf-autotable";
+import students from "../../data/students.json";
 
 const sections = {
   DASHBOARD: "dashboard",
@@ -85,7 +87,7 @@ const School = () => {
           className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full"
         >
           <h2 className="text-3xl font-extrabold mb-8 text-center text-gray-800">
-            Student Login
+            Student Portal
           </h2>
 
           {error && (
@@ -218,7 +220,7 @@ const School = () => {
         <img
           src={loggedInStudent.photoUrl}
           alt="Student Photo"
-          className="w-36 h-36 rounded-full object-cover mb-5 border-4 border-blue-700"
+          className="w-36 h-36 rounded-full object-cover mb-5 border-4 border-orange-700"
         />
         <h1 className="text-4xl font-extrabold mb-1 text-gray-900">
           {loggedInStudent.name}
@@ -308,40 +310,128 @@ const School = () => {
   );
 
   // Results section
-  const ResultsSection = () => (
-    <div className="bg-white rounded-lg shadow-xl p-8 max-w-3xl w-full">
-      <h2 className="text-3xl font-bold mb-6 border-b border-gray-300 pb-3 text-gray-800">
-        Exam Results
-      </h2>
+  const ResultsSection = () => {
+ const generatePDF = async () => {
+  const doc = new jsPDF();
 
-      <table className="w-full text-left border-collapse shadow-sm rounded-lg overflow-hidden">
-        <thead className="bg-blue-100">
-          <tr>
-            <th className="p-4 font-semibold border-b border-blue-300">Subject</th>
-            <th className="p-4 font-semibold border-b border-blue-300">Score (%)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Object.entries(loggedInStudent.results).map(([subject, score]) => (
-            <tr key={subject} className="odd:bg-white even:bg-blue-50">
-              <td className="p-4 border-b border-blue-200">{subject}</td>
-              <td className="p-4 border-b border-blue-200">{score}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+  // Load images asynchronously
+  const loadImage = (src) =>
+    new Promise((resolve) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => resolve(img);
+    });
+
+  // Load all images
+  const logoImg = await loadImage("/images/Dreams_Secondary_School.png");
+  const teacherSignImg = await loadImage("/images/Teacher_Signature.png");
+  const headTeacherSignImg = await loadImage("/images/Signature.png");
+
+  // Add school logo top-left (x=10, y=10, width=30, height auto scaled)
+  doc.addImage(logoImg, "PNG", 10, 10, 30, (logoImg.height * 30) / logoImg.width);
+
+  // Add school name centered
+  doc.setFontSize(22);
+  doc.setFont("helvetica", "bold");
+  doc.text("Dreams Secondary School", 105, 25, null, null, "center");
+
+  // Report title below school name
+  doc.setFontSize(16);
+  doc.setFont("helvetica", "normal");
+  doc.text("Student Exam Report", 105, 35, null, null, "center");
+
+  // Student info
+  doc.setFontSize(12);
+  doc.text(`Name: ${loggedInStudent.name}`, 14, 50);
+  doc.text(`Class: ${loggedInStudent.class}`, 14, 58);
+  doc.text(`Student ID: ${loggedInStudent.studentId}`, 14, 66);
+
+  // Prepare table data
+  const resultsData = Object.entries(loggedInStudent.results).map(
+    ([subject, score]) => [subject, `${score}%`]
   );
+
+  // Add table (use jsPDF-AutoTable)
+  autoTable(doc, {
+    startY: 75,
+    head: [["Subject", "Score"]],
+    body: resultsData,
+    styles: { halign: "center" },
+    headStyles: { fillColor: [255, 165, 0] },
+  });
+
+  // Position for signatures (below table)
+  const finalY = doc.lastAutoTable.finalY || 75;
+
+  // Add teacher signature and label
+  doc.text("Teacher's Signature:", 14, finalY + 30);
+  doc.addImage(
+    teacherSignImg,
+    "PNG",
+    14,
+    finalY + 35,
+    50,
+    (teacherSignImg.height * 50) / teacherSignImg.width
+  );
+
+  // Add head teacher signature and label
+  doc.text("Head Teacher's Signature:", 150, finalY + 30);
+  doc.addImage(
+    headTeacherSignImg,
+    "PNG",
+    150,
+    finalY + 35,
+    50,
+    (headTeacherSignImg.height * 50) / headTeacherSignImg.width
+  );
+
+  // Save PDF
+  doc.save(`School_Report_For_${loggedInStudent.name}.pdf`);
+};
+
+
+
+    return (
+      <div className="bg-white rounded-lg shadow-xl p-8 max-w-3xl w-full">
+        <div className="flex justify-between items-center mb-6 border-b border-gray-300 pb-3">
+          <h2 className="text-3xl font-bold text-gray-800">Exam Results</h2>
+          <button
+            onClick={generatePDF}
+            className="bg-orange-600 hover:bg-orange-700 text-white px-5 py-2 rounded-lg text-sm font-semibold"
+          >
+            Download Report
+          </button>
+        </div>
+
+        <table className="w-full text-left border-collapse shadow-sm rounded-lg overflow-hidden">
+          <thead className="bg-blue-100">
+            <tr>
+              <th className="p-4 font-semibold border-b border-blue-300">Subject</th>
+              <th className="p-4 font-semibold border-b border-blue-300">Score (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Object.entries(loggedInStudent.results).map(([subject, score]) => (
+              <tr key={subject} className="odd:bg-white even:bg-blue-50">
+                <td className="p-4 border-b border-blue-200">{subject}</td>
+                <td className="p-4 border-b border-blue-200">{score}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  };
 
   // Attendance section (mock data)
   const AttendanceSection = () => {
     // Just mock some data here
     const attendanceData = {
-      "Mathematics": "92%",
-      "English": "88%",
-      "Science": "95%",
-      "History": "90%",
-      "Geography": "85%",
+      Mathematics: "92%",
+      English: "88%",
+      Science: "95%",
+      History: "90%",
+      Geography: "85%",
     };
 
     return (
@@ -414,10 +504,7 @@ const School = () => {
       <h2 className="text-3xl font-bold mb-6 border-b border-gray-300 pb-3 text-gray-800">
         Settings
       </h2>
-      <p className="text-gray-700">
-        Here you can add settings like password change, notification preferences,
-        and more in future.
-      </p>
+      <p className="text-gray-700"></p>
     </div>
   );
 
