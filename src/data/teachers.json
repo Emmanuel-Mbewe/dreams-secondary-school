@@ -1,0 +1,24 @@
+[
+  {
+    "teacherId": "T001",
+    "password": "password123",
+    "name": "Mr. Emmanuel Mbewe",
+    "subject": "Mathematics",
+    "email": "emmanuel@gmail.com",
+    "phone": "555-123-4567",
+    "photoUrl": "/images/students/Emma.jpg",
+    "address": "Kasungu",
+    "dateOfBirth": "1980-03-15"
+  },
+  {
+    "teacherId": "T002",
+    "password": "teach456",
+    "name": "Ms. Linda Botha Mwale",
+    "subject": "Science",
+    "email": "linda@gmail.com",
+    "phone": "555-987-6543",
+    "photoUrl": "/images/linda.jpg",
+    "address": "Lilongwe",
+    "dateOfBirth": "1985-09-12"
+  }
+]

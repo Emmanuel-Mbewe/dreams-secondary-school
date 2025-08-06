@@ -47,9 +47,10 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             <a href="/" className="text-black hover:text-gray-700">Home</a>
+            <a href="/teachers" className="text-black hover:text-gray-700">Teachers</a>
             <a href="/about" className="text-black hover:text-gray-700">About Us</a>
-            <a href="/academics" className="text-black hover:text-gray-700">Academics</a>
-            <a href="/admissions" className="text-black hover:text-gray-700">Admissions</a>
+            {/* <a href="/academics" className="text-black hover:text-gray-700">Academics</a>
+            <a href="/admissions" className="text-black hover:text-gray-700">Admissions</a> */}
             <a href="/students" className="text-black hover:text-gray-700">Students</a>
             
             <div
@@ -88,7 +89,7 @@ const Navbar = () => {
 
           {/* Social Media Icons */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://web.facebook.com/profile.php?id=100095368848132">
+            <a href="#">
               <FaFacebook className="hover:text-gray-700 text-black" />
             </a>
             <a href="#"><FaTwitter className="hover:text-gray-700 text-black" /></a>
@@ -123,14 +124,14 @@ const Navbar = () => {
           <div className="bg-orange-700 text-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="/" className="block hover:text-black">Home</a>
             <a href="/about" className="block hover:text-black">About Us</a>
-            <a href="/academics" className="block hover:text-black">Academics</a>
-            <a href="/admissions" className="block hover:text-black">Admissions</a>
+            {/* <a href="/academics" className="block hover:text-black">Academics</a>
+            <a href="/admissions" className="block hover:text-black">Admissions</a> */}
             <a href="/students" className="block hover:text-black">Students</a>
             <a href="/departments" className="block hover:text-black">Departments</a>
             <a href="/news" className="block hover:text-black">News</a>
             <a href="/contact" className="block hover:text-black">Contact Us</a>
             <div className="flex justify-center mt-4 space-x-3">
-              <a href="https://web.facebook.com/profile.php?id=100095368848132">
+              <a href="#">
                 <FaFacebook className="hover:text-black" />
               </a>
               <a href="#"><FaTwitter className="hover:text-black" /></a>
