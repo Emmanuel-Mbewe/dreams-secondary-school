@@ -34,7 +34,7 @@ const ScienceDepartment = () => {
           {/* Example teacher cards */}
           <div className="bg-gray-100 rounded-lg p-4 text-center shadow">
             <img
-              src="/images/teachers/mr-kamanga.jpg"
+              src="/images/students/Emma.jpg"
               alt="Mr. Kamanga"
               className="mx-auto mb-4 w-24 h-24 rounded-full object-cover"
             />
@@ -44,7 +44,7 @@ const ScienceDepartment = () => {
 
           <div className="bg-gray-100 rounded-lg p-4 text-center shadow">
             <img
-              src="/images/teachers/ms-moyo.jpg"
+              src="/images/students/Emma.jpg"
               alt="Ms. Moyo"
               className="mx-auto mb-4 w-24 h-24 rounded-full object-cover"
             />
@@ -54,7 +54,7 @@ const ScienceDepartment = () => {
 
           <div className="bg-gray-100 rounded-lg p-4 text-center shadow">
             <img
-              src="/images/teachers/mr-ngoma.jpg"
+              src="/images/students/Emma.jpg"
               alt="Mr. Ngoma"
               className="mx-auto mb-4 w-24 h-24 rounded-full object-cover"
             />

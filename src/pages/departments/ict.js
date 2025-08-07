@@ -34,7 +34,7 @@ const ICTDepartment = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-gray-100 rounded-lg p-4 text-center shadow">
             <img
-              src="/images/teachers/mr-phiri.jpg"
+              src="/images/students/Emma.jpg"
               alt="Mr. Phiri"
               className="mx-auto mb-4 w-24 h-24 rounded-full object-cover"
             />
@@ -44,7 +44,7 @@ const ICTDepartment = () => {
 
           <div className="bg-gray-100 rounded-lg p-4 text-center shadow">
             <img
-              src="/images/teachers/ms-ngwira.jpg"
+              src="/images/students/Emma.jpg"
               alt="Ms. Ngwira"
               className="mx-auto mb-4 w-24 h-24 rounded-full object-cover"
             />
@@ -54,7 +54,7 @@ const ICTDepartment = () => {
 
           <div className="bg-gray-100 rounded-lg p-4 text-center shadow">
             <img
-              src="/images/teachers/mr-chilanga.jpg"
+              src="/images/students/Emma.jpg"
               alt="Mr. Chilanga"
               className="mx-auto mb-4 w-24 h-24 rounded-full object-cover"
             />

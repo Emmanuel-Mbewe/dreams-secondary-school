@@ -49,8 +49,8 @@ const Navbar = () => {
             <a href="/" className="text-black hover:text-gray-700">Home</a>
             <a href="/teachers" className="text-black hover:text-gray-700">Teachers</a>
             <a href="/about" className="text-black hover:text-gray-700">About Us</a>
-            {/* <a href="/academics" className="text-black hover:text-gray-700">Academics</a>
-            <a href="/admissions" className="text-black hover:text-gray-700">Admissions</a> */}
+            <a href="/academics" className="text-black hover:text-gray-700">Academics</a>
+            <a href="/admissions" className="text-black hover:text-gray-700">Admissions</a>
             <a href="/students" className="text-black hover:text-gray-700">Students</a>
             
             <div
@@ -65,7 +65,7 @@ const Navbar = () => {
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2">
                   {[
                     { href: "/departments/science", label: "Science" },
-                    { href: "/departments/mathematics", label: "Mathematics" },
+                    { href: "/departments/languages", label: "Languages" },
                     { href: "/departments/humanities", label: "Humanities" },
                     { href: "/departments/ict", label: "ICT" },
                   ].map(({ href, label }) => (
@@ -85,15 +85,6 @@ const Navbar = () => {
             
             <a href="/news" className="text-black hover:text-gray-700">News</a>
             <a href="/contact" className="text-black hover:text-gray-700">Contact Us</a>
-          </div>
-
-          {/* Social Media Icons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <a href="#">
-              <FaFacebook className="hover:text-gray-700 text-black" />
-            </a>
-            <a href="#"><FaTwitter className="hover:text-gray-700 text-black" /></a>
-            <a href="#"><FaInstagram className="hover:text-gray-700 text-black" /></a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -121,22 +112,15 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="bg-orange-700 text-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="bg-orange-600 text-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="/" className="block hover:text-black">Home</a>
             <a href="/about" className="block hover:text-black">About Us</a>
-            {/* <a href="/academics" className="block hover:text-black">Academics</a>
-            <a href="/admissions" className="block hover:text-black">Admissions</a> */}
+            <a href="/academics" className="block hover:text-black">Academics</a>
+            <a href="/admissions" className="block hover:text-black">Admissions</a>
             <a href="/students" className="block hover:text-black">Students</a>
             <a href="/departments" className="block hover:text-black">Departments</a>
             <a href="/news" className="block hover:text-black">News</a>
             <a href="/contact" className="block hover:text-black">Contact Us</a>
-            <div className="flex justify-center mt-4 space-x-3">
-              <a href="#">
-                <FaFacebook className="hover:text-black" />
-              </a>
-              <a href="#"><FaTwitter className="hover:text-black" /></a>
-              <a href="#"><FaInstagram className="hover:text-black" /></a>
-            </div>
           </div>
         </div>
       )}
