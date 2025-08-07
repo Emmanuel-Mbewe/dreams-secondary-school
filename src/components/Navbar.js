@@ -47,8 +47,8 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             <a href="/" className="text-black hover:text-gray-700">Home</a>
-            <a href="/teachers" className="text-black hover:text-gray-700">Teachers</a>
             <a href="/about" className="text-black hover:text-gray-700">About Us</a>
+            <a href="/teachers" className="text-black hover:text-gray-700">Teachers</a>            
             <a href="/academics" className="text-black hover:text-gray-700">Academics</a>
             <a href="/admissions" className="text-black hover:text-gray-700">Admissions</a>
             <a href="/students" className="text-black hover:text-gray-700">Students</a>
@@ -115,6 +115,7 @@ const Navbar = () => {
           <div className="bg-orange-600 text-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="/" className="block hover:text-black">Home</a>
             <a href="/about" className="block hover:text-black">About Us</a>
+            <a href="/teachers" className="text-black hover:text-gray-700">Teachers</a>
             <a href="/academics" className="block hover:text-black">Academics</a>
             <a href="/admissions" className="block hover:text-black">Admissions</a>
             <a href="/students" className="block hover:text-black">Students</a>

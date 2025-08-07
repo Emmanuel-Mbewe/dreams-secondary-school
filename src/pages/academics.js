@@ -24,13 +24,13 @@ const Academics = () => {
 
         {/* Mathematics Department */}
         <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-          <h2 className="text-2xl font-semibold text-orange-600 mb-3">Mathematics Department</h2>
+          <h2 className="text-2xl font-semibold text-orange-600 mb-3">Languages Department</h2>
           <p className="text-gray-700 mb-4">
-            Our curriculum covers pure and applied mathematics, fostering analytical skills and problem-solving abilities.
+            Our curriculum covers local and international languages, fostering analytical skills and problem-solving abilities.
           </p>
           <ul className="list-disc list-inside text-gray-600">
             <li>Interactive learning sessions</li>
-            <li>Math clubs and contests</li>
+            <li>Language clubs and contests</li>
             <li>Use of technology in teaching</li>
           </ul>
         </div>
