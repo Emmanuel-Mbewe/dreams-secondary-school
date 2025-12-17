@@ -39,8 +39,8 @@ const Navbar = () => {
                 className="rounded-full"
               />
             </a>
-            <a href="/" className="text-orange-700 font-bold text-xl">
-              Dreams Secondary School
+            <a href="/" className="text-blue-700 font-bold text-xl">
+              Zomba Vocational Training Center
             </a>
           </div>
 
@@ -48,41 +48,10 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-8">
             <a href="/" className="text-black hover:text-gray-700">Home</a>
             <a href="/about" className="text-black hover:text-gray-700">About Us</a>
-            <a href="/teachers" className="text-black hover:text-gray-700">Teachers</a>            
+            <a href="/staff" className="text-black hover:text-gray-700">Staff</a>            
             <a href="/academics" className="text-black hover:text-gray-700">Academics</a>
             <a href="/admissions" className="text-black hover:text-gray-700">Admissions</a>
-            <a href="/students" className="text-black hover:text-gray-700">Students</a>
-            
-            <div
-              className="relative"
-              onMouseEnter={openDepartments}
-              onMouseLeave={closeDepartments}
-            >
-              <a href="#" className="text-black hover:text-gray-700 cursor-pointer">
-                Departments
-              </a>
-              {departmentsOpen && (
-                <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2">
-                  {[
-                    { href: "/departments/science", label: "Science" },
-                    { href: "/departments/languages", label: "Languages" },
-                    { href: "/departments/humanities", label: "Humanities" },
-                    { href: "/departments/ict", label: "ICT" },
-                  ].map(({ href, label }) => (
-                    <a
-                      key={label}
-                      href={href}
-                      className="block px-4 py-2 text-black hover:bg-gray-100"
-                      onMouseEnter={openDepartments}
-                      onMouseLeave={closeDepartments}
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-            
+            <a href="/students" className="text-black hover:text-gray-700">Students</a>            
             <a href="/news" className="text-black hover:text-gray-700">News</a>
             <a href="/contact" className="text-black hover:text-gray-700">Contact Us</a>
           </div>
@@ -115,11 +84,10 @@ const Navbar = () => {
           <div className="bg-orange-600 text-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="/" className="block hover:text-black">Home</a>
             <a href="/about" className="block hover:text-black">About Us</a>
-            <a href="/teachers" className="text-black hover:text-gray-700">Teachers</a>
+            <a href="/staff" className="text-black hover:text-gray-700">Staff</a>
             <a href="/academics" className="block hover:text-black">Academics</a>
             <a href="/admissions" className="block hover:text-black">Admissions</a>
             <a href="/students" className="block hover:text-black">Students</a>
-            <a href="/departments" className="block hover:text-black">Departments</a>
             <a href="/news" className="block hover:text-black">News</a>
             <a href="/contact" className="block hover:text-black">Contact Us</a>
           </div>

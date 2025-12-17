@@ -126,7 +126,7 @@ const School = () => {
 
           <button
             type="submit"
-            className="w-full bg-orange-600 hover:bg-orange-600 text-white p-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition"
+            className="w-full bg-blue-700 hover:bg-orange-600 text-white p-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition"
           >
             Login
           </button>

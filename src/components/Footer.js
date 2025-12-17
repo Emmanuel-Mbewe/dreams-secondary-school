@@ -7,9 +7,9 @@ const Footer = () => {
         {/* Top Section: Branding, Navigation & Social Media */}
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-xl font-bold">Dreams Secondary School</h2>
+            <h2 className="text-xl font-bold">Zomba Vocational Training Center (ZVTC)</h2>
             <p className="text-gray-400">
-              Empowering minds. Building futures.
+              The Key To a Perfect Future.
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
@@ -21,7 +21,7 @@ const Footer = () => {
               <a href="/contact" className="hover:text-gray-400">Contact</a>
             </div>
             <div className="flex space-x-4">
-              <a href="https://web.facebook.com/profile.php?id=100095368848132" className="hover:text-gray-400">
+              <a href="https://web.facebook.com/zvtcenter" className="hover:text-gray-400">
                 <FaFacebookF />
               </a>
               <a href="#" className="hover:text-gray-400">
@@ -51,7 +51,7 @@ const Footer = () => {
 
         {/* Bottom Section: Copyright */}
         <div className="mt-6 text-center text-gray-400 text-sm">
-          &copy; {new Date().getFullYear()} Dreams Secondary School. All rights reserved.
+          &copy; {new Date().getFullYear()} Zomba Vocational Training Center. All rights reserved.
         </div>
       </div>
     </footer>
