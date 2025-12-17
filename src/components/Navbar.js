@@ -81,7 +81,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="bg-orange-600 text-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="bg-blue-700 text-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="/" className="block hover:text-black">Home</a>
             <a href="/about" className="block hover:text-black">About Us</a>
             <a href="/staff" className="text-black hover:text-gray-700">Staff</a>
