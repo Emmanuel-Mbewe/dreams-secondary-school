@@ -4,7 +4,6 @@ const Home = () => {
   // Images for the highlights — replace with your school images!
   const academicsImage = '/images/academics.jpg';
   const admissionsImage = '/images/admissions.jpg';
-  const departmentsImage = '/images/departments.jpg';
   const newsImage = '/images/news.jpg';
 
   return (
