@@ -6,8 +6,8 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>Dreams Secondary School</title>
-        <meta name="description" content="Welcome to Dreams Secondary School" />
+        <title>ZVTC</title>
+        <meta name="description" content="Welcome to ZVTC" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
