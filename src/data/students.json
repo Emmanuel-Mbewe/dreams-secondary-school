@@ -8,7 +8,7 @@
     "phone": "+265996808428",
     "email": "emmanuel@gmail.com",
     "address": "Lisasadzi, P/Bag 40, Kasungu",
-    "photoUrl": "/images/students/Emma.jpg",
+    "photoUrl": "/images/students/images.jpeg",
     "results": {
       "Mathematics": 85,
       "English": 78,
@@ -24,7 +24,7 @@
     "phone": "+265999123456",
     "email": "aliness@gmail.com",
     "address": "Lilongwe, Malawi",
-    "photoUrl": "/images/aliness.jpg",
+    "photoUrl": "/images/students/images (1).jpeg",
     "results": {
       "Mathematics": 88,
       "English": 90,
@@ -40,7 +40,71 @@
     "phone": "+265998765432",
     "email": "pemphero@gmail.com",
     "address": "Blantyre, Malawi",
-    "photoUrl": "/images/pemphero.jpg",
+   "photoUrl": "/images/students/images (2).jpeg",
+    "results": {
+      "Mathematics": 75,
+      "English": 82,
+      "Chemistry": 88
+    }
+  },
+   {
+    "studentId": "S003",
+    "password": "123456",
+    "name": "Pemphero Chikadza",
+    "class": "Form 1",
+    "dateOfBirth": "2006-09-12",
+    "phone": "+265998765432",
+    "email": "pemphero@gmail.com",
+    "address": "Blantyre, Malawi",
+   "photoUrl": "/images/students/images (3).jpeg",
+    "results": {
+      "Mathematics": 75,
+      "English": 82,
+      "Chemistry": 88
+    }
+  },
+   {
+    "studentId": "S003",
+    "password": "123456",
+    "name": "Pemphero Chikadza",
+    "class": "Form 1",
+    "dateOfBirth": "2006-09-12",
+    "phone": "+265998765432",
+    "email": "pemphero@gmail.com",
+    "address": "Blantyre, Malawi",
+   "photoUrl": "/images/students/images (4).jpeg",
+    "results": {
+      "Mathematics": 75,
+      "English": 82,
+      "Chemistry": 88
+    }
+  },
+   {
+    "studentId": "S003",
+    "password": "123456",
+    "name": "Pemphero Chikadza",
+    "class": "Form 1",
+    "dateOfBirth": "2006-09-12",
+    "phone": "+265998765432",
+    "email": "pemphero@gmail.com",
+    "address": "Blantyre, Malawi",
+   "photoUrl": "/images/students/images (5).jpeg",
+    "results": {
+      "Mathematics": 75,
+      "English": 82,
+      "Chemistry": 88
+    }
+  },
+   {
+    "studentId": "S003",
+    "password": "123456",
+    "name": "Pemphero Chikadza",
+    "class": "Form 1",
+    "dateOfBirth": "2006-09-12",
+    "phone": "+265998765432",
+    "email": "pemphero@gmail.com",
+    "address": "Blantyre, Malawi",
+   "photoUrl": "/images/students/images (6).jpeg",
     "results": {
       "Mathematics": 75,
       "English": 82,
