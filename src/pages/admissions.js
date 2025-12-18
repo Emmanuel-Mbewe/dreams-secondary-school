@@ -1,9 +1,10 @@
 const Admissions = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-6 md:px-20">
+   <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] 
+    from-orange-100 via-white to-gray-100 py-16 px-6 md:px-20">
       {/* Header */}
       <header className="max-w-4xl mx-auto text-center mb-12">
-        <h1 className="text-5xl font-bold text-gray-900 mb-4">
+        <h1 className="text-orange-700 text-4xl font-bold text-gray-900 mb-4">
           Admissions at Zomba Vocational Training Centre (ZVTC)
         </h1>
         <p className="text-lg text-gray-700">
@@ -15,7 +16,7 @@ const Admissions = () => {
 
       {/* Admission Details */}
       <section className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
-        <h2 className="text-3xl font-semibold text-blue-700 mb-6">
+        <h2 className="text-orange-500 text-3xl font-semibold text-blue-700 mb-6">
           Admission Process
         </h2>
         <ol className="list-decimal list-inside text-gray-700 space-y-4 mb-8">
@@ -42,7 +43,7 @@ const Admissions = () => {
           </li>
         </ol>
 
-        <h2 className="text-3xl font-semibold text-blue-700 mb-6">
+        <h2 className="text-orange-500 text-3xl font-semibold text-blue-700 mb-6">
           Admission Requirements
         </h2>
         <ul className="list-disc list-inside text-gray-700 space-y-2 mb-8">
@@ -56,7 +57,7 @@ const Admissions = () => {
         <div className="text-center">
           <button
             onClick={() => (window.location.href = "/contact")}
-            className="bg-blue-700 hover:bg-orange-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300"
+            className="bg-orange-800 hover:bg-orange-800 text-white px-8 py-3 rounded-full font-semibold transition duration-300"
           >
             Get in Touch to Apply
           </button>

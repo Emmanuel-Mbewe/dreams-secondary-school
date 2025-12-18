@@ -30,7 +30,7 @@ const Contact = () => {
       </Head>
 
       <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-8">
-        <h1 className="text-2xl font-semibold mb-4">Contact US</h1>
+        <h1 className="text-orange-500 text-2xl font-semibold mb-4">Contact US</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700 mb-2" htmlFor="name">
@@ -79,7 +79,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-700 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-200"
+            className="w-full bg-orange-800 text-white py-2 rounded-lg hover:bg-blue-900 transition duration-200"
           >
             Send Message
           </button>

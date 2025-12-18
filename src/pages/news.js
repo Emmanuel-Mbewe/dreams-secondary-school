@@ -30,7 +30,7 @@ const News = () => {
   return (
     <div className="min-h-screen bg-gray-100 pt-32 px-4 sm:px-6 lg:px-8">
       <section className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-blue-700 mb-8">
+        <h1 className="text-orange-700 text-4xl font-bold text-blue-700 mb-8">
           Latest News & Updates
         </h1>
         <p className="text-lg text-gray-700 mb-10">

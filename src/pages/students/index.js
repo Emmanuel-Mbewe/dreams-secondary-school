@@ -86,7 +86,7 @@ const School = () => {
           onSubmit={handleLogin}
           className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full"
         >
-          <h2 className="text-3xl font-extrabold mb-8 text-center text-gray-800">
+          <h2 className="text-orange-700 text-3xl font-extrabold mb-8 text-center text-gray-800">
             Student Portal
           </h2>
 
@@ -126,7 +126,7 @@ const School = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-700 hover:bg-orange-600 text-white p-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition"
+            className="w-full bg-orange-800 hover:bg-blue-900 text-white p-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition"
           >
             Login
           </button>

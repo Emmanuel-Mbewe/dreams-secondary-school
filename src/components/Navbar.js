@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white fixed w-full z-50 shadow-md">
+    <nav className="bg-orange-800 fixed w-full z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo and School Name */}
@@ -39,26 +39,26 @@ const Navbar = () => {
                 className="rounded-full"
               />
             </a>
-            <a href="/" className="text-blue-700 font-bold text-xl">
+            <a href="/" className="text-blue-900 font-bold text-xl">
               Zomba Vocational Training Center
             </a>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            <a href="/" className="text-black hover:text-gray-700">Home</a>
-            <a href="/about" className="text-black hover:text-gray-700">About Us</a>
-            <a href="/staff" className="text-black hover:text-gray-700">Staff</a>            
-            <a href="/academics" className="text-black hover:text-gray-700">Academics</a>
-            <a href="/admissions" className="text-black hover:text-gray-700">Admissions</a>
-            <a href="/students" className="text-black hover:text-gray-700">Students</a>            
-            <a href="/news" className="text-black hover:text-gray-700">News</a>
-            <a href="/contact" className="text-black hover:text-gray-700">Contact Us</a>
+            <a href="/" className="text-white hover:text-gray-700">Home</a>
+            <a href="/about" className="text-white hover:text-gray-700">About Us</a>
+            <a href="/staff" className="text-white hover:text-gray-700">Staff</a>            
+            <a href="/academics" className="text-white hover:text-gray-700">Academics</a>
+            <a href="/admissions" className="text-white hover:text-gray-700">Admissions</a>
+            <a href="/students" className="text-white hover:text-gray-700">Students</a>            
+            <a href="/news" className="text-white hover:text-gray-700">News</a>
+            <a href="/contact" className="text-white hover:text-gray-700">Contact Us</a>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <button className="text-black focus:outline-none" onClick={toggleMenu}>
+            <button className="text-white focus:outline-none" onClick={toggleMenu}>
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -81,10 +81,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="bg-blue-700 text-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="bg-orange-800 text-white px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="/" className="block hover:text-black">Home</a>
             <a href="/about" className="block hover:text-black">About Us</a>
-            <a href="/staff" className="text-black hover:text-gray-700">Staff</a>
+            <a href="/staff" className="block hover:text-black">Staff</a>
             <a href="/academics" className="block hover:text-black">Academics</a>
             <a href="/admissions" className="block hover:text-black">Admissions</a>
             <a href="/students" className="block hover:text-black">Students</a>

@@ -28,7 +28,7 @@ const Home = () => {
           </p>
           <Link
             href="/about"
-            className="px-8 py-3 bg-blue-700 hover:bg-blue-700 rounded-full text-lg font-semibold transition duration-300"
+            className="px-8 py-3 bg-orange-800 hover:bg-blue-800 rounded-full text-lg font-semibold transition duration-300"
           >
             Explore Our School
           </Link>

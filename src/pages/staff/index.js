@@ -91,7 +91,7 @@ const TeacherPortal = () => {
           onSubmit={handleLogin}
           className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full"
         >
-          <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
+          <h2 className="text-orange-700 text-3xl font-bold text-center mb-6 text-gray-800">
             Lecturer Portal
           </h2>
           {error && <p className="text-red-600 mb-4 text-center">{error}</p>}
@@ -113,7 +113,7 @@ const TeacherPortal = () => {
           />
           <button
             type="submit"
-            className="w-full bg-blue-800 hover:bg-blue-700 text-white p-3 rounded-lg font-semibold"
+            className="w-full bg-orange-800 hover:bg-blue-900 text-white p-3 rounded-lg font-semibold"
           >
             Login
           </button>
