@@ -62,53 +62,5 @@
       "English": 82,
       "Chemistry": 88
     }
-  },
-   {
-    "studentId": "S003",
-    "password": "123456",
-    "name": "Pemphero Chikadza",
-    "class": "Form 1",
-    "dateOfBirth": "2006-09-12",
-    "phone": "+265998765432",
-    "email": "pemphero@gmail.com",
-    "address": "Blantyre, Malawi",
-   "photoUrl": "/images/students/images (4).jpeg",
-    "results": {
-      "Mathematics": 75,
-      "English": 82,
-      "Chemistry": 88
-    }
-  },
-   {
-    "studentId": "S003",
-    "password": "123456",
-    "name": "Pemphero Chikadza",
-    "class": "Form 1",
-    "dateOfBirth": "2006-09-12",
-    "phone": "+265998765432",
-    "email": "pemphero@gmail.com",
-    "address": "Blantyre, Malawi",
-   "photoUrl": "/images/students/images (5).jpeg",
-    "results": {
-      "Mathematics": 75,
-      "English": 82,
-      "Chemistry": 88
-    }
-  },
-   {
-    "studentId": "S003",
-    "password": "123456",
-    "name": "Pemphero Chikadza",
-    "class": "Form 1",
-    "dateOfBirth": "2006-09-12",
-    "phone": "+265998765432",
-    "email": "pemphero@gmail.com",
-    "address": "Blantyre, Malawi",
-   "photoUrl": "/images/students/images (6).jpeg",
-    "results": {
-      "Mathematics": 75,
-      "English": 82,
-      "Chemistry": 88
-    }
   }
 ]
