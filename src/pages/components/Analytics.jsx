@@ -1,20 +1,25 @@
-"use client";
-
-import { usePathname, useSearchParams } from "next/navigation";
+import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-export default function Analytics() {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
+const Analytics = () => {
+  const router = useRouter();
 
   useEffect(() => {
-    if (typeof window.gtag !== "undefined") {
-      const url = pathname + searchParams.toString();
-      window.gtag("config", process.env.NEXT_PUBLIC_GA_ID, {
-        page_path: url,
-      });
-    }
-  }, [pathname, searchParams]);
+    const handleRouteChange = (url) => {
+      if (window.gtag) {
+        window.gtag("config", process.env.NEXT_PUBLIC_GA_ID, {
+          page_path: url,
+        });
+      }
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   return null;
-}
+};
+
+export default Analytics;
